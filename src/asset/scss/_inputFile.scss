@@ -1,0 +1,47 @@
+.inputFile {
+  //box
+  .inputFileBox {
+    position: relative;
+    margin: 8px 0 14px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    height: 160px;
+  }
+  .inputFileWrap {
+    border: 1px dashed #8b8b91;
+    border-radius: 4px;
+    padding: 61px 45px;
+    line-height: 1;
+    p {
+      margin-top: 7px;
+      line-height: 1;
+      color: #8b8b91;
+    }
+  }
+  //list
+  .inputFileList {
+    > li {
+      position: relative;
+      padding-left: 7px;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "-";
+        display: block;
+      }
+    }
+  }
+
+  //image
+  img {
+    max-width: 100%;
+    @include center();
+  }
+}
+
+//camera svg icon
+.path {
+  fill: #8b8b91;
+}

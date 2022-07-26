@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+//el center
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//layout
+.layout {
+  padding: 40px 20px 218px;
+  .layoutTitle {
+    margin: 0 124.5px 40px;
+    font-weight: bold;
+    color: #1d1d1f;
+    line-height: 1;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+  .layoutTitle2 {
+    margin: 0 179px 8px 0;
+    font-weight: 500;
+    line-height: 1;
+    color: #5c5c62;
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+}

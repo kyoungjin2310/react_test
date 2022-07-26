@@ -1,10 +1,12 @@
 import React from "react";
 import "./asset/scss/style.scss";
+import { Route } from "react-router-dom";
+import InputFile from "./pages/InputFile";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <Route path="/inputFile" component={InputFile} />
+    </>
   );
 }
 
