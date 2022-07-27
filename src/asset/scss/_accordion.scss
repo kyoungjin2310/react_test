@@ -1,0 +1,59 @@
+//border color
+$bdC: #f5f5f9;
+
+.accordion {
+  padding: 40px 0 218px;
+  .accordionTitle {
+    border-top: 8px solid $bdC;
+    padding: 21px 147px 21px 20px;
+    font-size: 15px;
+    letter-spacing: 0;
+    color: #1d1d1f;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .accordionList {
+    .listTitle {
+      position: relative;
+      font-size: 14px;
+      color: #343437;
+      line-height: 1;
+      padding: 21px 147px 21px 20px;
+      border-bottom: 1px solid $bdC;
+      cursor: pointer;
+    }
+    > li {
+      &:first-child {
+        border-top: 1px solid $bdC;
+      }
+      &.on {
+        border-bottom: 8px solid $bdC;
+        .listTitle {
+          border-bottom: none;
+          font-weight: 700;
+          color: #4a74e8;
+        }
+        .arrow {
+          .color {
+            fill: #6e91f0;
+          }
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .listBox {
+      padding: 0 20px 22px;
+      font-size: 14px;
+      color: #5c5c62;
+      line-height: 1.71;
+    }
+    .arrow {
+      position: absolute;
+      top: 21px;
+      right: 20px;
+      .color {
+        fill: #8b8b91;
+      }
+    }
+  }
+}
