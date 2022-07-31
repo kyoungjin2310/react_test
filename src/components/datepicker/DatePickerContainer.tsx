@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Btn from "../styled/icon/Btn";
 import Layout from "../styled/Layout";
 import DatePickerList from "./DatePickerList";
@@ -38,8 +38,6 @@ const DatePickerContainer = () => {
       dateMonth === 12 ? (dateMonth = 1) : ++dateMonth
     );
   };
-
-  useEffect(() => {}, []);
 
   return (
     <Layout title="날짜 선택" className="datepicker">

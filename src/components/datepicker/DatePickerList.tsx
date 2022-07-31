@@ -25,14 +25,11 @@ const DatePickerList = ({
 }: DatePickerListProps) => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperCore>();
   const [selectDay, setSelectDay] = useState<number>(todayDate - 1);
-  const [stop, setStop] = useState(false);
   const onClick = (num: number) => {
     setSelectDay(num);
   };
-  const handleCategory = (activeIndex: number) => {};
   useEffect(() => {
     swiperInstance?.slideTo(selectDay);
-    console.log(selectDay);
   }, [swiperInstance, selectDay]);
   return (
     <div className="DatePicker">
@@ -40,7 +37,6 @@ const DatePickerList = ({
         slidesPerView={"auto"}
         className="datePicker"
         onSwiper={setSwiperInstance}
-        onSlideChange={(swiper) => handleCategory(swiper.activeIndex)}
       >
         {list.map((item: number, i: number) => (
           <SwiperSlide key={i} onClick={(e) => onClick(i)}>
