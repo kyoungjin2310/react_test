@@ -98,6 +98,12 @@ button {
   color: #343437;
   box-sizing: border-box;
   cursor: pointer;
+  .btnIcon {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 .confirm {
   border: solid 1px #6e91f0;

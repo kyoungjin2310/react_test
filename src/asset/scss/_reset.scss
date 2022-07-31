@@ -41,3 +41,9 @@ body {
   letter-spacing: -0.2px;
   color: #8b8b91;
 }
+
+.hide {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
