@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <Layout title="코딩 과제" className="main">
       <>
-        <ul>
+        <ul className="menu">
           <li>
             <Link to="/inputFile">inputFile</Link>
           </li>
