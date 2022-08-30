@@ -6,14 +6,16 @@ import Accordion from "./pages/Accordion";
 import TimePicker from "./pages/TimePicker";
 import DatePicker from "./pages/DatePicker";
 import Main from "./pages/Main";
+import Practice from "./Practice";
 function App() {
   return (
     <>
-      <Route exact path="/" component={Main} />
+      {/* <Route exact path="/" component={Main} />
       <Route path="/inputFile" component={InputFile} />
       <Route path="/accordion" component={Accordion} />
       <Route path="/timepicker" component={TimePicker} />
-      <Route path="/datepicker" component={DatePicker} />
+      <Route path="/datepicker" component={DatePicker} /> */}
+      <Practice />
     </>
   );
 }
